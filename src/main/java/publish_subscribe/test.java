@@ -27,6 +27,7 @@ public class test {
       //注册监听者
       Observer observer = new WeatherObserver();
       subject.registerObserver(observer);
+      //发送消息
       subject.notifyObserver("天气发生变化");
    }
 
